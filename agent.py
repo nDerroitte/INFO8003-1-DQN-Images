@@ -181,4 +181,5 @@ class Agent:
             dqn.save_weights(True)
         if plot:
             simplePlot(x_plt, y_plt, "Episodes", "Total Reward", "DQN")
+        os.remove("tmpDQN.png")
         return dqn

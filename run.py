@@ -20,7 +20,7 @@ if __name__ == "__main__":
         '--nb_episodes',
         help='Number of episodes used during the Q-learing algorithm',
         type=int,
-        default=2000
+        default=200
     )
 
     # discount_factor : gamma parameter

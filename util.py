@@ -132,6 +132,7 @@ def DQNSimulation(dqn, start_state, video_indc=False):
         new_img = cv2.imread('tmpDQN.png')
         # Will be the intput of the NN
         image_array  = np.array(new_img)
+    os.remove("tmpDQN.png")
 
     if video_indc:
         name = "DQN_agent"
